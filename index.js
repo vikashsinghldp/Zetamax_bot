@@ -1,7 +1,7 @@
-
+require('dotenv').config();
 const { Telegraf, Markup } = require('telegraf');
 
-const bot = new Telegraf(7270386048:AAFF26J2o0yMSb5Lfq7WO6h_O-6nets0Q2k);
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 // Store user language preferences
 const userLanguage = {};
